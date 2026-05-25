@@ -331,15 +331,11 @@ Previews the production build locally.
 
 ---
 
-## Judging Criteria Alignment
 
 ### Potential Impact
 
 The project helps students reduce confusion and decide what to work on next.
 
-### Creativity & Originality
-
-It applies Coral-style cross-source SQL thinking to student productivity and placement preparation.
 
 ### Technical Implementation
 
@@ -404,7 +400,3 @@ Working prototype completed:
 **GitHub Repo:** https://github.com/Aaranya296/captains-study-compass
 
 ---
-
-## Author
-
-Built by **Aaranya Mandal** for the Pirates of the Coral-bean Hackathon.
