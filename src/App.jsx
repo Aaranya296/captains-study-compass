@@ -160,6 +160,39 @@ function App() {
           ))}
         </div>
       </section>
+      <section className="card">
+  <p className="label">Coral Integration Proof</p>
+  <h2>How Coral fits into this project</h2>
+
+  <div className="proof-grid">
+    <div className="proof-item">
+      <strong>Coral CLI</strong>
+      <span>Installed and configured locally through Ubuntu/WSL.</span>
+    </div>
+
+    <div className="proof-item">
+      <strong>GitHub Source</strong>
+      <span>GitHub source was added using Coral interactive setup.</span>
+    </div>
+
+    <div className="proof-item">
+      <strong>Local Data Sources</strong>
+      <span>Student tasks, skills, and repo progress are stored as CSV files.</span>
+    </div>
+
+    <div className="proof-item">
+      <strong>SQL Query Files</strong>
+      <span>Queries inside /queries show how the sources can be joined.</span>
+    </div>
+  </div>
+
+  <p className="muted coral-note">
+    Coral allows different sources such as APIs, databases, and files to be
+    queried using SQL. In this prototype, student tasks, weak skill data, and
+    GitHub-style project progress are structured as queryable sources and
+    converted into a daily action dashboard.
+  </p>
+</section>
 
       <section className="card story">
         <p className="label">Why Coral matters</p>
