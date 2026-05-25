@@ -1,0 +1,5 @@
+repo_id,repo_name,description,tech_stack,open_issues,progress_percent,related_skill_id
+1,dsa-practice,DSA problem solving repo,C++,5,40,3
+2,web-dev-dashboard,Frontend dashboard project,React,3,60,2
+3,coral-hackathon,Captain Study Compass,React Coral SQL,4,35,1
+4,github-learning,Git and GitHub practice,GitHub,2,25,4

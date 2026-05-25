@@ -1,0 +1,122 @@
+{
+  "todayCommand": {
+    "title": "Learn Coral local query",
+    "category": "SQL",
+    "deadline": "2026-05-25",
+    "priorityScore": 115,
+    "reason": "Priority is based on deadline, difficulty, and SQL confidence."
+  },
+  "overdueTasks": [],
+  "weakSkills": [
+    {
+      "skill_name": "GitHub",
+      "confidence_level": 30
+    },
+    {
+      "skill_name": "Hackathon Demo",
+      "confidence_level": 40
+    },
+    {
+      "skill_name": "SQL",
+      "confidence_level": 45
+    },
+    {
+      "skill_name": "Web Dev",
+      "confidence_level": 55
+    }
+  ],
+  "githubProgress": [
+    {
+      "repo_name": "github-learning",
+      "description": "Git and GitHub practice",
+      "tech_stack": "GitHub",
+      "open_issues": 2,
+      "progress_percent": 25
+    },
+    {
+      "repo_name": "coral-hackathon",
+      "description": "Captain Study Compass",
+      "tech_stack": "React Coral SQL",
+      "open_issues": 4,
+      "progress_percent": 35
+    },
+    {
+      "repo_name": "dsa-practice",
+      "description": "DSA problem solving repo",
+      "tech_stack": "C++",
+      "open_issues": 5,
+      "progress_percent": 40
+    },
+    {
+      "repo_name": "web-dev-dashboard",
+      "description": "Frontend dashboard project",
+      "tech_stack": "React",
+      "open_issues": 3,
+      "progress_percent": 60
+    }
+  ],
+  "priorityTasks": [
+    {
+      "title": "Learn Coral local query",
+      "category": "SQL",
+      "deadline": "2026-05-25",
+      "difficulty": 5,
+      "skill_name": "SQL",
+      "confidence_level": 45,
+      "priorityScore": 115,
+      "reason": "Priority is based on deadline, difficulty, and SQL confidence."
+    },
+    {
+      "title": "Write hackathon README",
+      "category": "GitHub",
+      "deadline": "2026-05-28",
+      "difficulty": 3,
+      "skill_name": "GitHub",
+      "confidence_level": 30,
+      "priorityScore": 91,
+      "reason": "Priority is based on deadline, difficulty, and GitHub confidence."
+    },
+    {
+      "title": "Build dashboard UI",
+      "category": "Web Dev",
+      "deadline": "2026-05-26",
+      "difficulty": 4,
+      "skill_name": "Web Dev",
+      "confidence_level": 55,
+      "priorityScore": 88,
+      "reason": "Priority is based on deadline, difficulty, and Web Dev confidence."
+    },
+    {
+      "title": "Record demo video",
+      "category": "Hackathon",
+      "deadline": "2026-05-31",
+      "difficulty": 4,
+      "skill_name": "Hackathon Demo",
+      "confidence_level": 40,
+      "priorityScore": 78,
+      "reason": "Priority is based on deadline, difficulty, and Hackathon Demo confidence."
+    },
+    {
+      "title": "Solve 5 array problems",
+      "category": "DSA",
+      "deadline": "2026-05-27",
+      "difficulty": 3,
+      "skill_name": "DSA",
+      "confidence_level": 60,
+      "priorityScore": 66,
+      "reason": "Priority is based on deadline, difficulty, and DSA confidence."
+    }
+  ],
+  "coralQueries": [
+    {
+      "name": "priority_join.sql",
+      "purpose": "Joins student tasks with weak skills to decide what to work on first.",
+      "sql": "SELECT t.task_id, t.title, t.category, t.deadline, t.difficulty, s.skill_name, s.confidence_level FROM tasks t JOIN skills s ON t.skill_id = s.skill_id WHERE t.status != 'done' ORDER BY t.deadline ASC, s.confidence_level ASC;"
+    },
+    {
+      "name": "github_progress.sql",
+      "purpose": "Finds GitHub-style projects that need attention.",
+      "sql": "SELECT repo_id, repo_name, description, tech_stack, open_issues, progress_percent FROM github_repos WHERE open_issues > 0 OR progress_percent < 70 ORDER BY progress_percent ASC, open_issues DESC;"
+    }
+  ]
+}

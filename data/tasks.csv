@@ -1,0 +1,6 @@
+task_id,title,category,deadline,difficulty,status,skill_id
+1,Learn Coral local query,SQL,2026-05-25,5,pending,1
+2,Build dashboard UI,Web Dev,2026-05-26,4,pending,2
+3,Solve 5 array problems,DSA,2026-05-27,3,pending,3
+4,Write hackathon README,GitHub,2026-05-28,3,pending,4
+5,Record demo video,Hackathon,2026-05-31,4,pending,5
