@@ -28,10 +28,11 @@ function App() {
 
   const categories = ["All", "SQL", "Web Dev", "DSA", "GitHub", "Hackathon"];
 
-  const filteredTasks =
+  const filteredTasks = (
     activeCategory === "All"
       ? data.priorityTasks
-      : data.priorityTasks.filter((task) => task.category === activeCategory);
+      : data.priorityTasks.filter((task) => task.category === activeCategory)
+  ).slice(0, 7);
 
   return (
     <main className="app">
@@ -39,8 +40,7 @@ function App() {
         <p className="badge">Pirates of the Coral-bean Hackathon</p>
         <h1>Captain’s Study Compass</h1>
         <p>
-          A personal agent dashboard that uses Coral SQL thinking to combine
-          study tasks, weak skills, deadlines, and GitHub project progress.
+          A personal agent dashboard that turns scattered student data into a daily action plan using Coral-style SQL logic across tasks, skills, deadlines, and GitHub-style project progress.
         </p>
       </section>
 
@@ -72,6 +72,9 @@ function App() {
           <div>
             <p className="label">Priority Map</p>
             <h2>What should I work on next?</h2>
+            <p className="muted">
+  Higher score means higher priority based on deadline pressure, task difficulty, and weak skill confidence.
+</p>
           </div>
 
           <div className="filters">
@@ -145,6 +148,27 @@ function App() {
           </div>
         </div>
       </section>
+      <section className="card">
+  <p className="label">Decision Logic</p>
+  <h2>How the priority score is calculated</h2>
+
+  <div className="logic-grid">
+    <div className="logic-item">
+      <strong>Deadline Pressure</strong>
+      <span>Tasks closer to the current hackathon date get higher priority.</span>
+    </div>
+
+    <div className="logic-item">
+      <strong>Difficulty</strong>
+      <span>Harder tasks are ranked higher because they need more focused time.</span>
+    </div>
+
+    <div className="logic-item">
+      <strong>Weak Skill Confidence</strong>
+      <span>Tasks connected to weaker skills are prioritized for learning growth.</span>
+    </div>
+  </div>
+</section>
 
       <section className="card">
         <p className="label">Coral SQL Deck</p>
@@ -198,12 +222,12 @@ function App() {
         <p className="label">Why Coral matters</p>
         <h2>One SQL layer over scattered student data</h2>
         <p>
-          Without Coral, a student would manually check files, notes, deadlines,
-          and GitHub projects separately. This project shows how Coral-style SQL
-          can join these sources and turn them into a simple daily action plan.
+          Without Coral, a student would need separate scripts, manual file checks, and API handling to understand what needs attention. Coral’s SQL-first approach makes scattered data easier to query, join, and convert into decisions. This project demonstrates that idea through a student productivity workflow.
         </p>
       </section>
     </main>
+  
+  
   );
 }
 

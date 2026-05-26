@@ -1,113 +1,175 @@
 {
   "todayCommand": {
-    "title": "Learn Coral local query",
+    "title": "Run Coral local CSV query",
     "category": "SQL",
     "deadline": "2026-05-25",
-    "priorityScore": 115,
-    "reason": "Priority is based on deadline, difficulty, and SQL confidence."
+    "priorityScore": 118,
+    "reason": "High priority because it has deadline pressure, difficulty level 5, and SQL and Coral confidence is 42%."
   },
   "overdueTasks": [],
   "weakSkills": [
     {
-      "skill_name": "GitHub",
-      "confidence_level": 30
+      "skill_name": "GitHub Workflow",
+      "confidence_level": 38
     },
     {
-      "skill_name": "Hackathon Demo",
-      "confidence_level": 40
+      "skill_name": "SQL and Coral",
+      "confidence_level": 42
     },
     {
-      "skill_name": "SQL",
+      "skill_name": "Hackathon Presentation",
       "confidence_level": 45
     },
     {
-      "skill_name": "Web Dev",
-      "confidence_level": 55
+      "skill_name": "React Frontend",
+      "confidence_level": 58
     }
   ],
   "githubProgress": [
     {
       "repo_name": "github-learning",
-      "description": "Git and GitHub practice",
+      "description": "Git and GitHub workflow practice",
       "tech_stack": "GitHub",
       "open_issues": 2,
-      "progress_percent": 25
-    },
-    {
-      "repo_name": "coral-hackathon",
-      "description": "Captain Study Compass",
-      "tech_stack": "React Coral SQL",
-      "open_issues": 4,
       "progress_percent": 35
     },
     {
-      "repo_name": "dsa-practice",
-      "description": "DSA problem solving repo",
-      "tech_stack": "C++",
-      "open_issues": 5,
+      "repo_name": "hackathon-demo-kit",
+      "description": "Demo script and submission material",
+      "tech_stack": "Markdown",
+      "open_issues": 3,
       "progress_percent": 40
     },
     {
+      "repo_name": "dsa-practice",
+      "description": "DSA problem solving repository",
+      "tech_stack": "C++",
+      "open_issues": 6,
+      "progress_percent": 45
+    },
+    {
+      "repo_name": "captains-study-compass",
+      "description": "Main Coral hackathon project",
+      "tech_stack": "React Coral SQL",
+      "open_issues": 4,
+      "progress_percent": 55
+    },
+    {
       "repo_name": "web-dev-dashboard",
-      "description": "Frontend dashboard project",
-      "tech_stack": "React",
+      "description": "Frontend dashboard practice project",
+      "tech_stack": "React CSS",
       "open_issues": 3,
-      "progress_percent": 60
+      "progress_percent": 65
     }
   ],
   "priorityTasks": [
     {
-      "title": "Learn Coral local query",
+      "title": "Run Coral local CSV query",
       "category": "SQL",
       "deadline": "2026-05-25",
       "difficulty": 5,
-      "skill_name": "SQL",
-      "confidence_level": 45,
-      "priorityScore": 115,
-      "reason": "Priority is based on deadline, difficulty, and SQL confidence."
+      "skill_name": "SQL and Coral",
+      "confidence_level": 42,
+      "priorityScore": 118,
+      "reason": "High priority because it has deadline pressure, difficulty level 5, and SQL and Coral confidence is 42%."
     },
     {
-      "title": "Write hackathon README",
+      "title": "Write cross-source priority query",
+      "category": "SQL",
+      "deadline": "2026-05-25",
+      "difficulty": 5,
+      "skill_name": "SQL and Coral",
+      "confidence_level": 42,
+      "priorityScore": 118,
+      "reason": "High priority because it has deadline pressure, difficulty level 5, and SQL and Coral confidence is 42%."
+    },
+    {
+      "title": "Create GitHub README proof",
       "category": "GitHub",
-      "deadline": "2026-05-28",
+      "deadline": "2026-05-26",
       "difficulty": 3,
-      "skill_name": "GitHub",
-      "confidence_level": 30,
-      "priorityScore": 91,
-      "reason": "Priority is based on deadline, difficulty, and GitHub confidence."
+      "skill_name": "GitHub Workflow",
+      "confidence_level": 38,
+      "priorityScore": 93,
+      "reason": "High priority because it has deadline pressure, difficulty level 3, and GitHub Workflow confidence is 38%."
     },
     {
-      "title": "Build dashboard UI",
+      "title": "Record first demo walkthrough",
+      "category": "Hackathon",
+      "deadline": "2026-05-27",
+      "difficulty": 4,
+      "skill_name": "Hackathon Presentation",
+      "confidence_level": 45,
+      "priorityScore": 93,
+      "reason": "High priority because it has deadline pressure, difficulty level 4, and Hackathon Presentation confidence is 45%."
+    },
+    {
+      "title": "Improve dashboard UI sections",
       "category": "Web Dev",
       "deadline": "2026-05-26",
       "difficulty": 4,
-      "skill_name": "Web Dev",
-      "confidence_level": 55,
-      "priorityScore": 88,
-      "reason": "Priority is based on deadline, difficulty, and Web Dev confidence."
+      "skill_name": "React Frontend",
+      "confidence_level": 58,
+      "priorityScore": 85,
+      "reason": "High priority because it has deadline pressure, difficulty level 4, and React Frontend confidence is 58%."
     },
     {
-      "title": "Record demo video",
+      "title": "Prepare final submission writeup",
       "category": "Hackathon",
-      "deadline": "2026-05-31",
+      "deadline": "2026-05-30",
       "difficulty": 4,
-      "skill_name": "Hackathon Demo",
-      "confidence_level": 40,
+      "skill_name": "Hackathon Presentation",
+      "confidence_level": 45,
       "priorityScore": 78,
-      "reason": "Priority is based on deadline, difficulty, and Hackathon Demo confidence."
+      "reason": "High priority because it has deadline pressure, difficulty level 4, and Hackathon Presentation confidence is 45%."
+    },
+    {
+      "title": "Build project filter feature",
+      "category": "Web Dev",
+      "deadline": "2026-05-28",
+      "difficulty": 4,
+      "skill_name": "React Frontend",
+      "confidence_level": 58,
+      "priorityScore": 75,
+      "reason": "High priority because it has deadline pressure, difficulty level 4, and React Frontend confidence is 58%."
+    },
+    {
+      "title": "Polish GitHub repo structure",
+      "category": "GitHub",
+      "deadline": "2026-05-30",
+      "difficulty": 3,
+      "skill_name": "Unknown",
+      "confidence_level": 50,
+      "priorityScore": 61,
+      "reason": "High priority because it has deadline pressure, difficulty level 3, and skill confidence is 50%."
     },
     {
       "title": "Solve 5 array problems",
       "category": "DSA",
-      "deadline": "2026-05-27",
+      "deadline": "2026-05-28",
       "difficulty": 3,
-      "skill_name": "DSA",
-      "confidence_level": 60,
-      "priorityScore": 66,
-      "reason": "Priority is based on deadline, difficulty, and DSA confidence."
+      "skill_name": "DSA Practice",
+      "confidence_level": 62,
+      "priorityScore": 59,
+      "reason": "High priority because it has deadline pressure, difficulty level 3, and DSA Practice confidence is 62%."
+    },
+    {
+      "title": "Test deployed Vercel link",
+      "category": "Hackathon",
+      "deadline": "2026-05-29",
+      "difficulty": 2,
+      "skill_name": "Hackathon Presentation",
+      "confidence_level": 45,
+      "priorityScore": 59,
+      "reason": "High priority because it has deadline pressure, difficulty level 2, and Hackathon Presentation confidence is 45%."
     }
   ],
   "coralQueries": [
+    {
+      "name": "cross_source_priority.sql",
+      "purpose": "Combines tasks, weak skills, and GitHub-style repo progress to decide the highest priority work.",
+      "sql": "SELECT t.task_id, t.title AS task_title, t.category, t.deadline, t.difficulty, s.skill_name, s.confidence_level, g.repo_name, g.open_issues, g.progress_percent FROM tasks t JOIN skills s ON t.skill_id = s.skill_id LEFT JOIN github_repos g ON s.skill_id = g.related_skill_id WHERE t.status != 'done' ORDER BY t.deadline ASC, s.confidence_level ASC, g.progress_percent ASC;"
+    },
     {
       "name": "priority_join.sql",
       "purpose": "Joins student tasks with weak skills to decide what to work on first.",

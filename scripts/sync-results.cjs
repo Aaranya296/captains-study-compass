@@ -49,7 +49,7 @@ const enrichedTasks = tasks
       skill_name: skill?.skill_name || "Unknown",
       confidence_level: confidence,
       priorityScore,
-      reason: `Priority is based on deadline, difficulty, and ${skill?.skill_name || "skill"} confidence.`
+      reason: `High priority because it has deadline pressure, difficulty level ${difficulty}, and ${skill?.skill_name || "skill"} confidence is ${confidence}%.`
     };
   })
   .sort((a, b) => b.priorityScore - a.priorityScore);
@@ -89,6 +89,12 @@ const results = {
   priorityTasks: enrichedTasks,
   coralQueries: [
     {
+  name: "cross_source_priority.sql",
+  purpose: "Combines tasks, weak skills, and GitHub-style repo progress to decide the highest priority work.",
+  sql: "SELECT t.task_id, t.title AS task_title, t.category, t.deadline, t.difficulty, s.skill_name, s.confidence_level, g.repo_name, g.open_issues, g.progress_percent FROM tasks t JOIN skills s ON t.skill_id = s.skill_id LEFT JOIN github_repos g ON s.skill_id = g.related_skill_id WHERE t.status != 'done' ORDER BY t.deadline ASC, s.confidence_level ASC, g.progress_percent ASC;"
+},
+    {
+      
       name: "priority_join.sql",
       purpose: "Joins student tasks with weak skills to decide what to work on first.",
       sql: "SELECT t.task_id, t.title, t.category, t.deadline, t.difficulty, s.skill_name, s.confidence_level FROM tasks t JOIN skills s ON t.skill_id = s.skill_id WHERE t.status != 'done' ORDER BY t.deadline ASC, s.confidence_level ASC;"
